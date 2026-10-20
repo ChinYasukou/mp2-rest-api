@@ -25,8 +25,10 @@ mp2-rest-api/
 │   ├── models.py
 │   ├── storage.py
 │   └── utils.py
-└── fixtures/
-    └── .gitkeep
+├── fixtures/
+│   └── .gitkeep
+└── tests/
+    └── test_storage.py
 ```
 
 ## Current progress
@@ -35,5 +37,17 @@ The project structure and dependencies are set up. The health and dataset
 metadata response models are defined, and MP1's logging configuration is reused
 with INFO output by default and DEBUG output when verbose mode is enabled.
 
-API endpoints, in-memory storage, and the sample dataset will be added in
-subsequent commits.
+In-memory dataset storage supports sequential IDs, defensive DataFrame copies,
+metadata calculated from current data, updates, and clearing all datasets.
+Stored data is lost when the process stops.
+
+API endpoints and the sample dataset will be added in subsequent commits.
+
+## Tests
+
+```bash
+python -m pytest -q
+```
+
+Storage tests in `tests/test_storage.py` cover ID assignment, copy isolation,
+updated metadata, missing IDs, clearing storage, and DEBUG logging.
