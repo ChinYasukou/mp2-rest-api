@@ -31,6 +31,9 @@ mp2-rest-api/
 
 ## Current progress
 
-The project structure and dependencies are set up. API endpoints, response
-models, logging, in-memory storage, and the sample dataset will be added in
+The project structure and dependencies are set up. The health and dataset
+metadata response models are defined, and MP1's logging configuration is reused
+with INFO output by default and DEBUG output when verbose mode is enabled.
+
+API endpoints, in-memory storage, and the sample dataset will be added in
 subsequent commits.
