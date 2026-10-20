@@ -1,0 +1,36 @@
+# MP2: Data Processing API
+
+DS3500 mini-project: build a REST API with FastAPI across two parts.
+
+## Setup
+
+Run these commands from the project root:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+## Project structure
+
+```text
+mp2-rest-api/
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── main.py
+├── src/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── storage.py
+│   └── utils.py
+└── fixtures/
+    └── .gitkeep
+```
+
+## Current progress
+
+The project structure and dependencies are set up. API endpoints, response
+models, logging, in-memory storage, and the sample dataset will be added in
+subsequent commits.
