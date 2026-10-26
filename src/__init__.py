@@ -11,4 +11,5 @@ from .models import (
     ValidationSettings,
 )
 from .storage import DatasetStorage
+from .middleware import log_requests
 from .utils import setup_logging
