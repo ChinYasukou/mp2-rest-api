@@ -43,7 +43,11 @@ metadata calculated from current data, updates, and clearing all datasets.
 Stored data is lost when the process stops.
 
 Part 1 (API Foundation) is complete, including the three endpoints, sample CSV,
-and automated tests. Part 2 (API Integration) is still to be implemented.
+and automated tests. Part 2 is in progress: MP1's validation, processing, and
+cleaning-report functions are included locally in `src/data_validator.py` and
+`src/data_processor.py`, so this repository does not require a separate MP1
+checkout. Processing models, endpoints, and request logging are not implemented
+yet.
 
 ## Run the API
 
